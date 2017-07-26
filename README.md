@@ -18,7 +18,7 @@ Guide for VS 2015: http://headerphile.com/sdl2/sdl2-part-0-setting-up-visual-stu
 	* `[-input] <...files> [(-s | --show)]`              Preview image files (.bmp | .rgb12) <br />
 		*Remarks*: Can drag and drop image files on application to execute this command.
 
-	* `(-a | --authors)`                                 Informations about authors
+	* `(-a | --authors)`                                 Information about authors
 	* `(-v | --version)`                                 Application version
 	* `(-h | --help)`                                    This message
 
@@ -31,14 +31,8 @@ Guide for VS 2015: http://headerphile.com/sdl2/sdl2-part-0-setting-up-visual-stu
 2. Project directory tree structure
 
 	* /bin  - all compiled executables
-	* /build - compiled binary build files
+	* /cmake_modules - cmake to find SDL2 library
 	* /include - c++ header files
 	* /src - c++ source files
 	* /test - main.cpp and other files used for tests
 	* /doc - documentation (in polish)
-
-3. Makefile <br />
-	Edit makefile to change flags for compilation debug and release versions
-	* `make` compiles application binary `bin/app`
-	* `make test` fresh compile test application binary `bin/test`
-	* `make clean` removes all files from `bin/` and `build/`
